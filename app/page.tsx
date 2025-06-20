@@ -43,11 +43,11 @@ export default function HomePage() {
         {users.map(u=> (
           <li style={{padding: 10}} key={u.id}>
             {u.name}{' '}
-            <button onClick={()=>{
+            <button style={{padding: 10}} onClick={()=>{
               setName(u.name);
               setEditingId(u.id);
             }}>Edit</button>{' '}
-            <button onClick={()=> deleteUser(u.id)}>Delete</button>
+            <button style={{padding: 10}} onClick={()=> deleteUser(u.id)}>Delete</button>
           </li>
         ))}
       </ul>
