@@ -47,7 +47,7 @@ export default function HomePage() {
               setName(u.name);
               setEditingId(u.id);
             }}>Edit</button>{' '}
-            <button style={{padding: 10}} onClick={()=> deleteUser(u.id)}>Delete</button>
+            <button style={{padding: 5}} onClick={()=> deleteUser(u.id)}>Delete</button>
           </li>
         ))}
       </ul>
